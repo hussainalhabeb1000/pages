@@ -1,0 +1,159 @@
+<html><head>
+    
+    
+    
+    
+    
+
+</head>
+<body><center>
+    
+<div class="container register">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Connect Google Spreadsheet to HTML</h3>
+                            <div class="row register-form">
+                                <div class="col-md-12">
+                                    <form method="post" autocomplete="off" name="google-sheet">
+                                        <div class="form-group">
+                                            <input type="text" name="username" class="form-control" placeholder="username" id="user">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="password" class="form-control" placeholder="password" id="pass">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input style="display: none;" type="submit" name="submit" class="btnSubmit btn-block" value="Login" id="upload"><input type="button" value="login and register" onclick="myFunction()">
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzP67-c9-T3HHmzLZmuDg-J2lRU_3wSmzJ_kwRve2aNTA3DdfbMu7e-bFS7EkvJs3Qy/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => myFunction())
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script><script>
+function myFunction() {
+  keys=[]
+keys.push('AIzaSyBexfyuvjQmYr0FJ8fp8ewZiwnPxd1anMk')
+keys.push('AIzaSyBiTCOON4nBshU4hpLCyxHeOMoWYDZhPRk')
+keys.push('AIzaSyDg3IEpiE_ZqgzsH_GTpABzcI1lXsyY7oc')
+keys.push('AIzaSyCjlE2pYeULb_PXUNG4KGHiwmze_mDEN-c')
+keys.push('AIzaSyA_RPERShFBltHPnSubdugTWUVI4ujY-WI')
+keys.push('AIzaSyCeheZwZox_Ji7o5v7yPi2x-T3qR-nTDiE')
+keys.push('AIzaSyDhEEYKoXeIGyqGHFqR_D3OCX1mGz6YkgU')
+keys.push('AIzaSyC4m2Tr6kQRYkUEXodCe8I-EZr-gcVVeoQ')
+keys.push('AIzaSyDvyMCqPiHA-lnQeNcuVo3-1WIMRqoMOi0')
+keys.push('AIzaSyBNHqDJ2K88tVT4Coa-36MKz1ikXe_6P5s')
+keys.push('AIzaSyDE2IxTmCMFDDglR_aL1TDLu_oUfjIU5Bw')
+keys.push('AIzaSyCAiT4vf3uRYKMdCIY0WjooZJ0iraPLHSY')
+keys.push('AIzaSyCTziALRXtHSash0iIkgv8wkYiNgjEcmbg')
+keys.push('AIzaSyBZXcTkUgd-fjNTJvKarl6rXFEneukBEPA')
+keys.push('AIzaSyB3DSjoWeLzAB0X20a30lt-c7ukNNDHmAQ')
+keys.push('AIzaSyB-saMGbj5Nok1h6fR7h4OikOxggB0U4pk')
+keys.push('AIzaSyCndZEo3hh5NuLoGsfkrDZ3KiHak_m40lw')
+
+key=keys[ Math.floor(Math.random() * 17)]
+id5="https://sheets.googleapis.com/v4/spreadsheets/1jxUu84jqWqrZH4Nl7H3ICYlU93HK4KW3jYxgcO0Hjv0/values/Sheet1?key="+key
+
+var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      id2 =
+      JSON.parse(this.responseText).values;  var Count;
+astop=0
+for (var count = 0; count < id2.length-1; count++) {
+
+duser=document.querySelectorAll('[id="user"]')[0].value+','+document.querySelectorAll('[id="pass"]')[0].value
+if(duser==String(id2[count+1] ))
+{
+
+
+
+localStorage.uid=count+1
+window.location.replace("https://hussainalhabeb1000.github.io/pages/quizeditor.html")
+astop=1
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+if(count==id2.length-1){
+if(astop==0)
+
+{
+document.querySelectorAll('[id="upload"]')[0].click()
+}
+
+}
+
+}
+    }
+  
+  xhttp.open("GET", id5,true);
+  xhttp.send();
+}
+</script><script>
+function function2() {
+  astop=0
+for (var count = 0; count < id2.length-1; count++) {
+
+duser=document.querySelectorAll('[id="user"]')[0].value+','+document.querySelectorAll('[id="pass"]')[0].value
+if(duser==String(id2[count+1] ))
+{
+
+
+
+uid=count+1
+astop=1
+
+}
+
+
+
+
+
+
+
+
+}
+
+
+if(count==id2.length-1){
+if(astop==0)
+
+{
+document.querySelectorAll('[id="upload"]')[0].click()
+}
+
+}
+}
+</script>
+
+
+</center>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</body>
+</html>
