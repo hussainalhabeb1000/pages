@@ -286,9 +286,12 @@ var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
 for (var count = 0; count < id2.values.length; count++) {
   if (id2.values[count][0]==localStorage.getItem('uid')) {    list.push(id2.values[count][1])
   }
+if(count==id2.values.length){removelist()}
+	
+	
 };
 
-removelist()
+
 
 var idd=-1
 
