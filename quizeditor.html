@@ -288,7 +288,7 @@ for (var count = 0; count < id2.values.length; count++) {
   }
 };
 
-
+removelist()
 
 var idd=-1
 
@@ -612,7 +612,8 @@ function upclick() {
    document.querySelectorAll('[id="upload"]')[0].click()
 
 }
-</script><script>
+</script>
+<script>
 function dte() {
   if(document.querySelectorAll('[id="bhide"]')[0].innerText=='🗑️')
   {
@@ -628,6 +629,46 @@ function dte() {
   
   
   
+}
+</script>
+<script>
+function removelist() {
+  // write to liste
+
+liste=[]
+for (var count = 0; count < list.length; count++) {
+
+if(list[count].includes('-')){liste.push(list[count])}
+
+}
+
+
+// delete from - list
+
+llength=list.length
+lcount=-1
+for (var count = 0; count < llength; count++) {
+lcount=lcount+1
+if(list[lcount].includes('-')){
+
+list.splice(lcount,1)
+lcount=lcount-1
+
+}
+}
+
+
+
+
+
+// delete item from list
+
+
+for (var count = 0; count < liste.length; count++) {
+list.splice(list.indexOf(liste[0].slice(1)),1)
+
+
+}
 }
 </script>
 
