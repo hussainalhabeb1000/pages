@@ -35,7 +35,7 @@
 
 
 
-</question><all></all></all><div align="center"><button onclick="upclick()" class="f-size17 ap1" id="bhide" style="display: none;">🆙</button><label class="f-size17 ap1" id="a1b">1</label><text class="f-size17 ap1" id="a1b">/</text><label class="f-size17 ap1" id="a2b">1</label><button onclick="loadimages()" class="f-size17 ap1" id="bhide" style="display: none;">🖼️</button><div><meta name="viewport" content="width=device-width, initial-scale=1.0"></div></div><div align="center" id="myInput2"><input type="text" id="myInput"><button onclick="myFunctioncopy()">Copy text</button></div>
+</question><all></all></all><div align="center"><button onclick="dte()" class="f-size17 ap1" id="bhide" style="">🗑️</button><button onclick="upclick()" class="f-size17 ap1" id="bhide" style="display: none;">🆙</button><label class="f-size17 ap1" id="a1b">1</label><text class="f-size17 ap1" id="a1b">/</text><label class="f-size17 ap1" id="a2b">1</label><button onclick="loadimages()" class="f-size17 ap1" id="bhide" style="display: none;">🖼️</button><div><meta name="viewport" content="width=device-width, initial-scale=1.0"></div></div><div align="center" id="myInput2"><input type="text" id="myInput"><button onclick="myFunctioncopy()">Copy text</button></div>
 
 
 
@@ -325,6 +325,7 @@ document.querySelectorAll('alc')[0].innerHTML=iframes.toString()
 }
 document.querySelectorAll('[id="bhide"]')[0].style.display=''
 document.querySelectorAll('[id="bhide"]')[1].style.display=''
+document.querySelectorAll('[id="bhide"]')[2].style.display=''
 	
 } else {
 document.body.style.zoom=1
@@ -333,27 +334,54 @@ document.querySelectorAll('question')[0].style.display=''
 document.querySelectorAll('alc')[0].style.display='none'
 document.querySelectorAll('[id="bhide"]')[0].style.display='none'
 document.querySelectorAll('[id="bhide"]')[1].style.display='none'
+document.querySelectorAll('[id="bhide"]')[2].style.display='none'
 	
 }
 }
 </script><script>
 function teest(img) {
+if (document.querySelectorAll('[id="bhide"]')[0].innerText!='🆗️'){
+
 immmg=img
 document.querySelectorAll('alc')[0].style.display='none'
 document.querySelectorAll('[id2="imbox"]')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].src=img
 
 
 loadimages()
-;ubkg()}
+;ubkg()
+
+}
+
+}
 </script><script>
 function getid(iddd) {
+
+  if(document.querySelectorAll('[id="bhide"]')[0].innerText=='🆗')
+  {
+  document.querySelectorAll("[id="+'"'+iddd+'"'+']')[0].remove()
+  
+  }
+  else{
   document.querySelectorAll('[id2="imbox"]')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].id=iddd
+  
+  }
+  
+  
 }
 </script><script>
 function ubkg() {
  document.querySelectorAll('[id="image"]')[0].innerHTML= 'body { background-image:url("'+ document.querySelectorAll('[id2="imbox"]')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].src+ '"); background-repeat: no-repeat; background-size: 100% 100%; } html { height: 100% }'
 }
-</script><script>function hidde() {document.querySelectorAll('alc')[0].style.display='none'}</script>
+</script><script>function hidde() {
+
+if (document.querySelectorAll('[id="bhide"]')[0].innerText!='🆗️'){
+
+document.querySelectorAll('alc')[0].style.display='none'
+}
+
+
+
+}</script>
 <style id="image">body { background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII="); background-repeat: no-repeat; background-size: 100% 100%; } html { height: 100% }</style>
 
 
@@ -569,6 +597,23 @@ document.querySelectorAll('iframe')[0].outerHTML=
 function upclick() {
    document.querySelectorAll('[id="upload"]')[0].click()
 
+}
+</script><script>
+function dte() {
+  if(document.querySelectorAll('[id="bhide"]')[0].innerText=='🗑️')
+  {
+  document.querySelectorAll('[id="bhide"]')[0].innerText='🆗'
+  
+  }
+  else{
+  
+  document.querySelectorAll('[id="bhide"]')[0].innerText='🗑️'
+  
+  }
+  
+  
+  
+  
 }
 </script>
 
