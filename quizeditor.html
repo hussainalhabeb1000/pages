@@ -286,12 +286,9 @@ var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
 for (var count = 0; count < id2.values.length; count++) {
   if (id2.values[count][0]==localStorage.getItem('uid')) {    list.push(id2.values[count][1])
   }
-if(count==id2.values.length){removelist()}
-	
-	
 };
 
-
+removelist()
 
 var idd=-1
 
@@ -636,7 +633,7 @@ function dte() {
 </script>
 <script>
 function removelist() {
-  // write to liste
+// write to liste
 
 liste=[]
 for (var count = 0; count < list.length; count++) {
@@ -668,7 +665,7 @@ lcount=lcount-1
 
 
 for (var count = 0; count < liste.length; count++) {
-list.splice(list.indexOf(liste[0].slice(1)),1)
+list.splice(list.indexOf(liste[count].slice(1)),1)
 
 
 }
