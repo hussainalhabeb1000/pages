@@ -587,11 +587,18 @@ if (delen==iframes.length) {
 }
 </script><script>
 function ttt() {
-document.querySelectorAll('alc')[0].outerHTML=document.querySelectorAll('alc')[0].outerHTML.replaceAll('height="200">,<img','height="200"><img')
+
   dige=document.querySelectorAll('iframe')[0].contentWindow.iage
 did=document.querySelectorAll('iframe')[0].contentWindow.id-1
 document.querySelectorAll('iframe')[0].outerHTML=
 '<img onclick="hidde();teest(this.src);getid(this.id);" ' +'id2="immage" '+'id='+did+' '+ 'src="' +dige+'"  width="200" height="200" >'
+	
+if(iframes.length==document.querySelectorAll('img').length-parseInt(document.querySelectorAll('[id="a1b"]')[0].innerText)-1
+){
+
+document.querySelectorAll('alc')[0].outerHTML=document.querySelectorAll('alc')[0].outerHTML.replaceAll('height="200">,<img','height="200"><img')
+}
+	
 }
 </script>
 <script>
