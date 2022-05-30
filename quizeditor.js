@@ -102,10 +102,10 @@ document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorA
 document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length;
 ubkg();};
 function loadimages() {
-if (document.querySelectorAll('question')[0].style.display=='') {
+if (document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].style.display=='') {
 document.body.style.zoom=0.5
 document.querySelectorAll('[id="myInput2"]')[0].style.display='none'
-document.querySelectorAll('question')[0].style.display='none'
+document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].style.display='none'
 document.querySelectorAll('alc')[0].style.display=''
 
 if(document.querySelectorAll('[id2="immage"]').length==0){
@@ -193,7 +193,7 @@ document.querySelectorAll('[id="bhide"]')[2].style.display=''
 } else {
 document.body.style.zoom=1
 document.querySelectorAll('[id="myInput2"]')[0].style.display=''
-document.querySelectorAll('question')[0].style.display=''
+document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].style.display=''
 document.querySelectorAll('alc')[0].style.display='none'
 document.querySelectorAll('[id="bhide"]')[0].style.display='none'
 document.querySelectorAll('[id="bhide"]')[1].style.display='none'
