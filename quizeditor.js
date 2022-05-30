@@ -47,7 +47,7 @@ if (document.querySelectorAll('[id="uPsrc"]')[0].src!=old) {
 old=document.querySelectorAll('[id="uPsrc"]')[0].src}
 };
 
-function getlen() {if (key==keys.length){key=0} else{key=key+1}
+function getlen() {
   var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -68,7 +68,7 @@ document.querySelectorAll('alc')[0].innerHTML=document.querySelectorAll('alc')[0
 
     }
   };
-  xhttp.open("GET", "https://sheets.googleapis.com/v4/spreadsheets/1wxFeq4630DmBmv6vBRwkp_utfWyHmT9tf9a6k2s8WEs/values/Sheet1!GS1?key="+keys[key-1], true);
+  xhttp.open("GET", "https://sheets.googleapis.com/v4/spreadsheets/1wxFeq4630DmBmv6vBRwkp_utfWyHmT9tf9a6k2s8WEs/values/Sheet1!GS1?key="+keys[Math.floor(Math.random() *17)], true);
   xhttp.send();
 };
 
