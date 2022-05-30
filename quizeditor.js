@@ -1,6 +1,6 @@
 
                 function previewFile() {
-  const preview = document.querySelectorAll('[id^="uP0"]')[21];
+  const preview = document.querySelectorAll('[id="uPsrc"]')[0];
   const file = document.querySelector('input[type=file]').files[0];
   const reader = new FileReader();
 
