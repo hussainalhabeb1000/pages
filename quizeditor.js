@@ -19,19 +19,19 @@ setTimeout(upload, 200);
             
 function upload() {var old
 
- if (document.querySelectorAll('[id^="uP0"]')[21].src != 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=') {
-  link=document.querySelectorAll('[id^="uP0"]')[21].currentSrc
+ if (document.querySelectorAll('[id="uP0"]')[200].src != 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=') {
+  link=document.querySelectorAll('[id="uP0"]')[200].currentSrc
 
 
-for (var count = 0; count < 20; count++) {
+for (var count = 0; count < 200; count++) {
   
 
 if (link == '') {
-  document.querySelectorAll('[id^="uP0"]')[count].value='#'
+  document.querySelectorAll('[id="uP0"]')[count].value='#'
 
 } else {
 
- document.querySelectorAll('[id^="uP0"]')[count].value=link.slice(0,50000)
+ document.querySelectorAll('[id="uP0"]')[count].value=link.slice(0,50000)
 
 }
 
@@ -40,11 +40,11 @@ if (link == '') {
 link=link.slice(50000)
 
 }
-if (document.querySelectorAll('[id^="uP0"]')[21].src!=old) {
-  document.querySelectorAll('[id^="uP0"]')[20].click();
+if (document.querySelectorAll('[id="uP0"]')[200].src!=old) {
+  document.querySelectorAll('[id="uP00"]')[0].click();
 
 }
-old=document.querySelectorAll('[id^="uP0"]')[21].src}
+old=document.querySelectorAll('[id="uP0"]')[200].src}
 };
 
 function getlen() {if (key==keys.length){key=0} else{key=key+1}
