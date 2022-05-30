@@ -68,7 +68,7 @@ document.querySelectorAll('alc')[0].innerHTML=document.querySelectorAll('alc')[0
 
     }
   };
-  xhttp.open("GET", "https://sheets.googleapis.com/v4/spreadsheets/1wxFeq4630DmBmv6vBRwkp_utfWyHmT9tf9a6k2s8WEs/values/Sheet1!GS1?key="+keys[key], true);
+  xhttp.open("GET", "https://sheets.googleapis.com/v4/spreadsheets/1wxFeq4630DmBmv6vBRwkp_utfWyHmT9tf9a6k2s8WEs/values/Sheet1!GS1?key="+keys[key-1], true);
   xhttp.send();
 };
 
