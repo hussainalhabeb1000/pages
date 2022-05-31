@@ -526,7 +526,7 @@ document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[3].c
 
 }
 ///////////////////////////
-function checked(check) {
+function cbchecked(check) {
   
 if (cl[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)*4-check]==false)
 
