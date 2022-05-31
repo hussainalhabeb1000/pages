@@ -289,7 +289,7 @@ document.querySelectorAll('[id="myInput"]')[0].value='https://hussainalhabeb1000
   navigator.clipboard.writeText(copyText.value);
   
   /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  /*alert("Copied the text: " + copyText.value);*/
 };
 
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxjIsplwmLa51mO15qGkp60lNeyj69owSzLxV9UexU26-oTQt5dBX_7Vc4eoDYaZSEg/exec'
