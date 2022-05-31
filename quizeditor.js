@@ -511,3 +511,17 @@ function pushlist() {
   cl.push(false)
   cl.push(false)
 }
+//////////////////
+function refresh() {
+  for (var count = 0; count < document.querySelectorAll('question').length; count++) {
+
+
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[0].checked=cl[count+1*4-4]
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[1].checked=cl[count+1*4-3]
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[2].checked=cl[count+1*4-2]
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[3].checked=cl[count+1*4-1]
+
+}
+
+
+}
