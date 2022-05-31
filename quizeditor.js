@@ -559,6 +559,6 @@ document.querySelectorAll('input')[parseInt(document.querySelectorAll('[id="a2b"
 
 }
 
-
+linksaved()
 
 }
