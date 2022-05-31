@@ -95,7 +95,7 @@ document.querySelectorAll('question')[parseInt(document.querySelectorAll('label'
  document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[1].innerText)+1 
 document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length;
 ubkg();
-
+refresh()
 	
 }
 function n() {
@@ -106,7 +106,7 @@ document.querySelectorAll('question')[parseInt(document.querySelectorAll('label'
 document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[1].innerText)-1}
 document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length;
 ubkg();
-
+refresh()
 	
 }
 function loadimages() {
@@ -519,14 +519,18 @@ function pushlist() {
 }
 //////////////////
 function refresh() {
-  for (var count = 0; count < document.querySelectorAll('question').length; count++) {
+  countt=1
+for (var count = 0; count < document.querySelectorAll('question').length; count++) {
+
+countt=countt*4
+
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[0].checked=cl[countt-4]
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[1].checked=cl[countt-3]
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[2].checked=cl[countt-2]
+document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[3].checked=cl[countt-1]
 
 
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[0].checked=cl[count+1*4-4]
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[1].checked=cl[count+1*4-3]
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[2].checked=cl[count+1*4-2]
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[3].checked=cl[count+1*4-1]
-
+countt=countt+1
 }
 
 
