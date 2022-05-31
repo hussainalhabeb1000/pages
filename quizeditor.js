@@ -532,8 +532,6 @@ document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[3].c
 
 }
 ///////////////////////////
-function cbchecked(check) {
-  
 function checked(check) {
   
 if (cl[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)*4-check]==false)
@@ -561,6 +559,4 @@ document.querySelectorAll('input')[parseInt(document.querySelectorAll('[id="a2b"
 
 
 
-}
-	
 }
