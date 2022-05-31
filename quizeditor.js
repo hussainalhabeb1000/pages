@@ -80,7 +80,9 @@ document.querySelectorAll('[id="sendud"]')[0].click()
 
 function p() {
 if (document.querySelectorAll('label')[1].innerText == document.querySelectorAll('question').length
-) {document.querySelectorAll('question')[parseInt(document.querySelectorAll('label')[1].innerText)-1].outerHTML=
+) {
+ pushlist()
+	document.querySelectorAll('question')[parseInt(document.querySelectorAll('label')[1].innerText)-1].outerHTML=
 document.querySelectorAll('question')[parseInt(document.querySelectorAll('label')[1].innerText)-1].outerHTML+
 document.querySelectorAll('question')[parseInt(document.querySelectorAll('label')[1].innerText)-1].outerHTML;document.querySelectorAll('[id^="asd"]')[document.querySelectorAll('[id^="asd"]').length-1].innerHTML='';
 document.querySelectorAll('[id^="asd"]')[document.querySelectorAll('[id^="asd"]').length-2].innerHTML=''
