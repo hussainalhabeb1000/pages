@@ -519,19 +519,17 @@ function pushlist() {
 }
 //////////////////
 function refresh() {
-  countt=1
-for (var count = 0; count < document.querySelectorAll('question').length; count++) {
+  
 
-countt=countt*4
-
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[0].checked=cl[countt-4]
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[1].checked=cl[countt-3]
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[2].checked=cl[countt-2]
-document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[3].checked=cl[countt-1]
+refreshh=parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)*4
 
 
-countt=countt+1
-}
+document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].querySelectorAll('[id="dsa"]')[0].checked=cl[refreshh-4]
+document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].querySelectorAll('[id="dsa"]')[1].checked=cl[refreshh-3]
+document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].querySelectorAll('[id="dsa"]')[2].checked=cl[refreshh-2]
+document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].querySelectorAll('[id="dsa"]')[3].checked=cl[refreshh-1]
+
+
 
 
 }
