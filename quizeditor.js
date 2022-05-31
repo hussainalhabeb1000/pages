@@ -94,7 +94,10 @@ document.querySelectorAll('question')[parseInt(document.querySelectorAll('label'
   
  document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[1].innerText)+1 
 document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length;
-ubkg();};
+ubkg();
+refresh()
+	
+}
 function n() {
 if (document.querySelectorAll('label')[1].innerText != 1)
 {document.querySelectorAll('question')[parseInt(document.querySelectorAll('label')[1].innerText)-1].style="display: none;"
@@ -102,7 +105,10 @@ document.querySelectorAll('question')[parseInt(document.querySelectorAll('label'
   
 document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[1].innerText)-1}
 document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length;
-ubkg();};
+ubkg();
+refresh()
+	
+}
 function loadimages() {
 if (document.querySelectorAll('question')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].style.display=='') {
 document.body.style.zoom=0.5
