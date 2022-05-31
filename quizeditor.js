@@ -473,3 +473,31 @@ list.splice(list.indexOf(liste[count].slice(1)),1)
 
 }
 };
+////////////
+
+function linksaved() {
+  repliste=1
+liste=[]
+
+
+for (var count = 0; count < parseInt(document.querySelectorAll('[id="a1b"]')[0].innerHTML); count++) {
+
+liste.push(document.querySelectorAll('[id2="imbox"]')[repliste-1].id)
+liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-5].innerText)
+liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-4].innerText)
+liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-3].innerText)
+liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-2].innerText)
+liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-1].innerText)
+
+liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-4].checked)
+liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-3].checked)
+liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-2].checked)
+liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-1].checked)
+
+repliste=repliste+1
+
+
+}
+window.location.href=window.location.origin+window.location.pathname+'#'+JSON.stringify(liste)
+}
+//////////
