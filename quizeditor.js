@@ -232,7 +232,7 @@ document.querySelectorAll('iframe')[document.querySelectorAll('iframe').length-1
   }
   else{
   document.querySelectorAll('[id2="imbox"]')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].id=iddd
-  linksaved()
+  
 	  
   }
   
