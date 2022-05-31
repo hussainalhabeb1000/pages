@@ -274,10 +274,10 @@ q4='#'+document.querySelectorAll('[id="asd"]')[replist*5-3].innerText
 q5='#'+document.querySelectorAll('[id="asd"]')[replist*5-2].innerText
 q6='#'+document.querySelectorAll('[id="asd"]')[replist*5-1].innerText
 
-if (document.querySelectorAll('[id="dsa"]')[replist*4-4].checked==false) {c1='#'+0} else {c1='#'+1}
-if (document.querySelectorAll('[id="dsa"]')[replist*4-3].checked==false) {c2='#'+0} else {c2='#'+1}
-if (document.querySelectorAll('[id="dsa"]')[replist*4-2].checked==false) {c3='#'+0} else {c3='#'+1}
-if (document.querySelectorAll('[id="dsa"]')[replist*4-1].checked==false) {c4='#'+0} else {c4='#'+1}
+if (cl[replist*4-4]==false) {c1='#'+0} else {c1='#'+1}
+if (cl[replist*4-3]==false) {c2='#'+0} else {c2='#'+1}
+if (cl[replist*4-2]==false) {c3='#'+0} else {c3='#'+1}
+if (cl[replist*4-1]==false) {c4='#'+0} else {c4='#'+1}
 replist=replist+1
 
 list.push(q1+q2+q3+q4+q5+q6+c1+c2+c3+c4);
