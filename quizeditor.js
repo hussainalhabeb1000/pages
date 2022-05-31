@@ -498,10 +498,10 @@ liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-3].innerText)
 liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-2].innerText)
 liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-1].innerText)
 
-liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-4].checked)
-liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-3].checked)
-liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-2].checked)
-liste.push(document.querySelectorAll('[id="dsa"]')[repliste*4-1].checked)
+liste.push(cl[repliste*4-4])
+liste.push(cl[repliste*4-3])
+liste.push(cl[repliste*4-2])
+liste.push(cl[repliste*4-1])
 
 repliste=repliste+1
 
