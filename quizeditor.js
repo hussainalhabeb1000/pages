@@ -502,3 +502,10 @@ repliste=repliste+1
 window.location.href=window.location.origin+window.location.pathname+'#'+JSON.stringify(liste)
 }
 //////////
+function pushlist() {
+  if(typeof cl=='undefined'){cl=[]}
+  cl.push(false)
+  cl.push(false)
+  cl.push(false)
+  cl.push(false)
+}
