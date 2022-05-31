@@ -525,3 +525,13 @@ document.querySelectorAll('question')[count].querySelectorAll('[id="dsa"]')[3].c
 
 
 }
+///////////////////////////
+function checked(check) {
+  
+if (cl[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)*4-check]==false)
+
+{cl[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)*4-check]=true}
+
+else{cl[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)*4-check]=false}
+refresh()
+}
