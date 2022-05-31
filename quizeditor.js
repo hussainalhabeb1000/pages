@@ -95,7 +95,7 @@ document.querySelectorAll('question')[parseInt(document.querySelectorAll('label'
  document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[1].innerText)+1 
 document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length;
 ubkg();
-refresh()
+
 	
 }
 function n() {
@@ -106,7 +106,7 @@ document.querySelectorAll('question')[parseInt(document.querySelectorAll('label'
 document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[1].innerText)-1}
 document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length;
 ubkg();
-refresh()
+
 	
 }
 function loadimages() {
