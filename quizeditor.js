@@ -688,5 +688,8 @@ if(document.querySelectorAll('label')[0].innerText==1){document.querySelectorAll
 
 
 }
+
+linksaved()
+	
 }
 
