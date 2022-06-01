@@ -568,13 +568,18 @@ linksaved()
 }
 ////////////////////////
 function loadimages2() {
-  if(window.location.href.includes('#')){loadimages();loadimages()}
+  if(window.location.href.includes('#')){
+	  loadimages();loadimages()
+	  
+	  lliste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+	  
+					}
 
 }
 /////////////////////////////
 
 function loadsaved() {
-  lliste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+  
 lliste=decodeURIComponent(lliste)
 lliste=JSON.parse(lliste)
 repliste=0
