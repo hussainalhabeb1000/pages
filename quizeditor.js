@@ -636,7 +636,7 @@ if(fromliste.length!=0){p()}
 refresh()
 fromliste=[]
 
-
+linksaved()
 
 }
 ////////////////////////////
