@@ -702,6 +702,64 @@ function fetchlink() {
 
 
 			fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
-                .then(response => alert())
+                .then(response => getlen2())
                 .catch(error => console.error('Error!', error.message))
 }
+/////////////
+
+function savequiz() {
+  
+  
+  link2=document.querySelectorAll('[id="myInput"]')[0].value
+
+
+for (var count = 0; count < 42; count++) {
+  
+
+if (link2 == '') {
+  document.querySelectorAll('[id="0uP0"]')[count].value=''
+
+} else {
+
+ document.querySelectorAll('[id="0uP0"]')[count].value=link2.slice(0,50000)
+
+}
+
+
+
+link2=link2.slice(50000)
+
+if(count==41){
+			
+			fetchlink()
+
+			
+}
+
+}
+  
+  
+}
+
+/////////////
+
+function getlen2() {
+  var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      id2 =
+      JSON.parse(this.responseText);
+idid2=parseInt(id2.values[0][0].slice(3))
+
+
+
+
+
+
+    }
+  };
+  xhttp.open("GET", "https://sheets.googleapis.com/v4/spreadsheets/1OnCDJwqDpzc5-hUuLv1BL08XwWeT4G_cbU1xExVz0dw/values/Sheet1!AQ1?key="+keys[Math.floor(Math.random() *17)], true);
+  xhttp.send();
+}
+
+/////////////
