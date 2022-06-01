@@ -395,7 +395,7 @@ if (delen==iframes.length) {
  
 						
 
-	  setTimeout(ttt, 200);
+	  ttt()
 							  
 							  
 							  }
@@ -623,7 +623,7 @@ if(liste.length!=0){p()}
 
 }
 
-
+refresh()
 
 
 
