@@ -572,6 +572,8 @@ function loadimages2() {
 	  loadimages();loadimages()
 	  
 	  lliste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+	  lliste=decodeURIComponent(lliste)
+lliste=JSON.parse(lliste)
 	  
 					}
 
@@ -580,8 +582,7 @@ function loadimages2() {
 
 function loadsaved() {
   
-lliste=decodeURIComponent(lliste)
-lliste=JSON.parse(lliste)
+
 repliste=0
 reliste=lliste.length/10
 reqliste=1
