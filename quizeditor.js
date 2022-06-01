@@ -568,20 +568,15 @@ linksaved()
 }
 ////////////////////////
 function loadimages2() {
-  if(window.location.href.includes('#')){
-	  liste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
-liste=decodeURIComponent(liste)
-liste=JSON.parse(liste)
-	  
-	  loadimages();loadimages()
-	  
-  }
+  if(window.location.href.includes('#')){loadimages();loadimages()}
 
 }
 /////////////////////////////
 
 function loadsaved() {
-
+  liste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+liste=decodeURIComponent(liste)
+liste=JSON.parse(liste)
 repliste=0
 reliste=liste.length/10
 reqliste=1
@@ -635,5 +630,4 @@ refresh()
 
 
 }
-
 
