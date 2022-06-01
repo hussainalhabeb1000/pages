@@ -575,13 +575,15 @@ linksaved()
 }
 ////////////////////////
 function loadimages2() {
-  if(window.location.href.includes('#')){loadimages();loadimages()}else{fromliste=[]}
+  if(window.location.href.includes('#')){loadimages();loadimages();
+ savedlink=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+					}else{fromliste=[]}
 
 }
 /////////////////////////////
 
 function loadsaved() {
-  fromliste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+  fromliste=savedlink
 fromliste=decodeURIComponent(fromliste)
 fromliste=JSON.parse(fromliste)
 repliste=0
