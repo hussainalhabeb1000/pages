@@ -489,28 +489,28 @@ list.splice(list.indexOf(liste[count].slice(1)),1)
 
 function linksaved() {
   repliste=1
-liste=[]
+toliste=[]
 
 
 for (var count = 0; count < parseInt(document.querySelectorAll('[id="a1b"]')[0].innerHTML); count++) {
 
-liste.push(document.querySelectorAll('[id2="imbox"]')[repliste-1].id)
-liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-5].innerText)
-liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-4].innerText)
-liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-3].innerText)
-liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-2].innerText)
-liste.push(document.querySelectorAll('[id="asd"]')[repliste*5-1].innerText)
+toliste.push(document.querySelectorAll('[id2="imbox"]')[repliste-1].id)
+toliste.push(document.querySelectorAll('[id="asd"]')[repliste*5-5].innerText)
+toliste.push(document.querySelectorAll('[id="asd"]')[repliste*5-4].innerText)
+toliste.push(document.querySelectorAll('[id="asd"]')[repliste*5-3].innerText)
+toliste.push(document.querySelectorAll('[id="asd"]')[repliste*5-2].innerText)
+toliste.push(document.querySelectorAll('[id="asd"]')[repliste*5-1].innerText)
 
-liste.push(cl[repliste*4-4])
-liste.push(cl[repliste*4-3])
-liste.push(cl[repliste*4-2])
-liste.push(cl[repliste*4-1])
+toliste.push(cl[repliste*4-4])
+toliste.push(cl[repliste*4-3])
+toliste.push(cl[repliste*4-2])
+toliste.push(cl[repliste*4-1])
 
 repliste=repliste+1
 
 
 }
-window.location.href=window.location.origin+window.location.pathname+'#'+JSON.stringify(liste)
+window.location.href=window.location.origin+window.location.pathname+'#'+JSON.stringify(toliste)
 }
 //////////
 function pushlist() {
@@ -573,45 +573,45 @@ function loadimages2() {
 /////////////////////////////
 
 function loadsaved() {
-  liste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
-liste=decodeURIComponent(liste)
-liste=JSON.parse(liste)
+  fromliste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+fromliste=decodeURIComponent(fromliste)
+fromliste=JSON.parse(fromliste)
 repliste=0
-reliste=liste.length/10
+reliste=fromliste.length/10
 reqliste=1
 for (var count = 0; count < reliste; count++) {
 
 
 
-if(liste[0]!=''){loadimages();document.querySelectorAll('[id2="immage"]'+'[id='+'"'+liste[0]+'"'+']')[0].click()}
-liste.shift()
+if(fromliste[0]!=''){loadimages();document.querySelectorAll('[id2="immage"]'+'[id='+'"'+fromliste[0]+'"'+']')[0].click()}
+fromliste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[0].innerText=liste[0]
-liste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[0].innerText=fromliste[0]
+fromliste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[1].innerText=liste[0]
-liste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[1].innerText=fromliste[0]
+fromliste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[2].innerText=liste[0]
-liste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[2].innerText=fromliste[0]
+fromliste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[3].innerText=liste[0]
-liste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[3].innerText=fromliste[0]
+fromliste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[4].innerText=liste[0]
-liste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[4].innerText=fromliste[0]
+fromliste.shift()
 
-cl[reqliste*4-4]=liste[0]
-liste.shift()
+cl[reqliste*4-4]=fromliste[0]
+fromliste.shift()
 
-cl[reqliste*4-3]=liste[0]
-liste.shift()
+cl[reqliste*4-3]=fromliste[0]
+fromliste.shift()
 
-cl[reqliste*4-2]=liste[0]
-liste.shift()
+cl[reqliste*4-2]=fromliste[0]
+fromliste.shift()
 
-cl[reqliste*4-1]=liste[0]
-liste.shift()
+cl[reqliste*4-1]=fromliste[0]
+fromliste.shift()
 
 
 
@@ -619,7 +619,7 @@ liste.shift()
 
 repliste=repliste+1
 reqliste=reqliste+1
-if(liste.length!=0){p()}
+if(fromliste.length!=0){p()}
 
 }
 
