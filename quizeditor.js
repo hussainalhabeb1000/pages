@@ -296,14 +296,14 @@ list.push(q1+q2+q3+q4+q5+q6+c1+c2+c3+c4);
 
 document.querySelectorAll('[id="myInput"]')[0].value='https://hussainalhabeb1000.github.io/pages/quizloader.html'+list.join('')+'#link##'+'$0'
   /* Get the text field */
-  var copyText = document.getElementById("myInput");
+  ///var copyText = document.getElementById("myInput");
 
   /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  ///copyText.select();
+ /// copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
   /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
+  ///navigator.clipboard.writeText(copyText.value);
   
   /* Alert the copied text */
   /*alert("Copied the text: " + copyText.value);*/
