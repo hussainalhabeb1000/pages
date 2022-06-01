@@ -664,6 +664,11 @@ else if(removee==0){
 p()
 document.querySelectorAll('question')[removee].remove()
 
+	if(parseInt(document.querySelectorAll('label')[1].innerText)>parseInt(document.querySelectorAll('label')[0].innerText)){
+
+document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[0].innerText)
+
+}
 
 }
 else{
@@ -671,7 +676,7 @@ else{
 
 p()
 document.querySelectorAll('question')[removee].remove()
-
+document.querySelectorAll('label')[1].innerText=parseInt(document.querySelectorAll('label')[1].innerText)-1
 
 }
 
