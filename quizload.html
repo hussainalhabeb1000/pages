@@ -1,5 +1,5 @@
 <html><head></head><body onload="myFunction()" style="margin:0px;padding:0px;overflow:hidden">
-    <iframe id=iframe src="data:text/html;base64,PGh0bWw+PGhlYWQ+PC9oZWFkPjxib2R5PjwvYm9keT48L2h0bWw+" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+    <iframe src="data:text/html;base64,PGh0bWw+PGhlYWQ+PC9oZWFkPjxib2R5PjwvYm9keT48L2h0bWw+" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -40,22 +40,6 @@ var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
 idid2=String(id2.values[0])
 document.querySelectorAll('iframe')[0].src=idid2
 
-        
-        
-        /* Get the element you want displayed in fullscreen mode (a video in this example): */
-var elem = document.getElementById("iframe");
-
-/* When the openFullscreen() function is executed, open the video in fullscreen.
-Note that we must include prefixes for different browsers, as they don't support the requestFullscreen property yet */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-} 
 
 
 
@@ -69,11 +53,5 @@ function openFullscreen() {
 }
 </script>
     
-    <script>
-function myFunction2() {
-  document.body.requestFullscreen()
-}
-</script>
-    <button onclick="myFunction2()">Click me</button>
 
 </body></html>
