@@ -568,7 +568,7 @@ linksaved()
 }
 ////////////////////////
 function loadimages2() {
-  if(window.location.href.includes('#')){loadimages();loadimages()}
+  if(window.location.href.includes('#')){loadimages();loadimages()}else{fromliste=[]}
 
 }
 /////////////////////////////
