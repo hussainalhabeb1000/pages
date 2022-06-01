@@ -694,4 +694,14 @@ if(document.querySelectorAll('label')[0].innerText==1){document.querySelectorAll
 linksaved()
 	
 }
+///////////
+function fetchlink() {
+  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbyTBCExeDurOB0awi2SaKUcfLeLh3v5GKlJEWa0D7292fRUziwGIzxd0W62DtHGw9qmMA/exec'
+            
+			const form2 = document.forms['google-sheet2']
 
+
+			fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
+                .then(response => alert())
+                .catch(error => console.error('Error!', error.message))
+}
