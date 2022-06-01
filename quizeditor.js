@@ -241,7 +241,6 @@ document.querySelectorAll('iframe')[document.querySelectorAll('iframe').length-1
   else{
   document.querySelectorAll('[id2="imbox"]')[parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1].id=iddd
   
-	  linksaved()
 	  
   }
   
@@ -568,57 +567,51 @@ linksaved()
 }
 ////////////////////////
 function loadimages2() {
-  if(window.location.href.includes('#')){
-	  loadimages();loadimages()
-	  
-	  lliste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
-	  lliste=decodeURIComponent(lliste)
-lliste=JSON.parse(lliste)
-	  
-					}
+  if(window.location.href.includes('#')){loadimages();loadimages()}
 
 }
 /////////////////////////////
 
 function loadsaved() {
-  
-
+  liste=window.location.href.slice(String(window.location.origin+window.location.pathname).length+1)
+liste=decodeURIComponent(liste)
+liste=JSON.parse(liste)
 repliste=0
-reliste=lliste.length/10
+reliste=liste.length/10
 reqliste=1
 for (var count = 0; count < reliste; count++) {
 
 
 
-if(lliste[0]!=''){loadimages();document.querySelectorAll('[id2="immage"]'+'[id='+'"'+lliste[0]+'"'+']')[0].click()}
-lliste.shift()
+if(liste[0]!=''){loadimages();document.querySelectorAll('[id2="immage"]'+'[id='+'"'+liste[0]+'"'+']')[0].click()}
+liste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[0].innerText=lliste[0]
-lliste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[0].innerText=liste[0]
+liste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[1].innerText=lliste[0]
-lliste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[1].innerText=liste[0]
+liste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[2].innerText=lliste[0]
-lliste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[2].innerText=liste[0]
+liste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[3].innerText=lliste[0]
-lliste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[3].innerText=liste[0]
+liste.shift()
 
-document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[4].innerText=lliste[0]
-lliste.shift()
+document.querySelectorAll('question')[repliste].querySelectorAll('[id="asd"]')[4].innerText=liste[0]
+liste.shift()
 
-cl[reqliste*4-4]=lliste[0]
-lliste.shift()
+cl[reqliste*4-4]=liste[0]
+liste.shift()
 
-cl[reqliste*4-3]=lliste[0]
-lliste.shift()
+cl[reqliste*4-3]=liste[0]
+liste.shift()
 
-cl[reqliste*4-2]=lliste[0]
-lliste.shift()
+cl[reqliste*4-2]=liste[0]
+liste.shift()
 
-cl[reqliste*4-1]=lliste[0]
-lliste.shift()
+cl[reqliste*4-1]=liste[0]
+liste.shift()
 
 
 
@@ -626,12 +619,11 @@ lliste.shift()
 
 repliste=repliste+1
 reqliste=reqliste+1
-if(lliste.length!=0){p()}
+if(liste.length!=0){p()}
 
 }
 
 refresh()
-
 
 
 
