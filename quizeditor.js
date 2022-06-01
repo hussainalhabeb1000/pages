@@ -197,6 +197,10 @@ document.querySelectorAll('alc')[0].innerHTML=iframes.toString()
 document.querySelectorAll('[id="bhide"]')[0].style.display=''
 document.querySelectorAll('[id="bhide"]')[1].style.display=''
 document.querySelectorAll('[id="bhide"]')[2].style.display=''
+document.querySelectorAll('[id="bbhide"]')[0].style.display='none'
+document.querySelectorAll('[id="divv"]')[0].outerHTML=document.querySelectorAll('[id="divv"]')[0].outerHTML.replaceAll('&nbsp;', '')
+	
+	
 	
 } else {
 document.body.style.zoom=1
@@ -206,6 +210,9 @@ document.querySelectorAll('alc')[0].style.display='none'
 document.querySelectorAll('[id="bhide"]')[0].style.display='none'
 document.querySelectorAll('[id="bhide"]')[1].style.display='none'
 document.querySelectorAll('[id="bhide"]')[2].style.display='none'
+document.querySelectorAll('[id="bbhide"]')[0].style.display=''
+document.querySelectorAll('label')[0].outerHTML='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+document.querySelectorAll('label')[0].outerHTML
+document.querySelectorAll('label')[1].outerHTML=document.querySelectorAll('label')[1].outerHTML+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
 	
 }
 };
