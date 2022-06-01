@@ -630,4 +630,51 @@ fromliste=[]
 
 
 }
+////////////////////////////
+
+function deletequestion() {
+  
+
+
+
+if(document.querySelectorAll('question').length!=1){
+
+
+removee=parseInt(document.querySelectorAll('[id="a2b"]')[0].innerText)-1
+
+
+if(removee+1==document.querySelectorAll('question').length){
+
+
+n()
+document.querySelectorAll('question')[removee].remove()
+
+
+}
+else if(removee==0){
+
+
+p()
+document.querySelectorAll('question')[removee].remove()
+
+
+}
+else{
+
+
+p()
+document.querySelectorAll('question')[removee].remove()
+
+
+}
+
+
+document.querySelectorAll('label')[0].innerText=document.querySelectorAll('question').length
+
+
+if(document.querySelectorAll('label')[0].innerText==1){document.querySelectorAll('label')[1].innerText=1}
+
+
+}
+}
 
