@@ -28,16 +28,16 @@ for (var count = 0; count < 200; count++) {
 
 if (link == '') {
   document.querySelectorAll('[id="uP0"]')[count].value=''
-
+link=link.slice(50000)
 } else {
 
  document.querySelectorAll('[id="uP0"]')[count].value=link.slice(0,50000)
-
+link=link.slice(50000)
 }
 
 
 
-link=link.slice(50000)
+///link=link.slice(50000)
 
 }
 if (document.querySelectorAll('[id="uPsrc"]')[0].src!=old) {
