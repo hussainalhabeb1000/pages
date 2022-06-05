@@ -27,7 +27,7 @@ for (var count = 0; count < 200; count++) {
   
 
 if (link == '') {
-  document.querySelectorAll('[id="uP0"]')[count].value='#'
+  document.querySelectorAll('[id="uP0"]')[count].value=''
 
 } else {
 
