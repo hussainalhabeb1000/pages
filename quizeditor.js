@@ -37,6 +37,7 @@ sold=s2
 ss22=0
 for (var count = 0; count < 200; count++) {
 document.querySelectorAll('[id="uP0"]')[ss22].value=list200[ss22]
+	if(list200[ss22]==''){document.querySelectorAll('[id="uP0"]')[ss22].value='#'}
 ss22=ss22+1
 }
 ///
