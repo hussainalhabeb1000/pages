@@ -751,7 +751,7 @@ function getlen2() {
     if (this.readyState == 4 && this.status == 200) {
       id2 =
       JSON.parse(this.responseText);
-idid2=parseInt(id2.values[0][0].slice(3))
+idid2=parseInt(id2.values[0][0].slice(3))-1
 
 
 /////
