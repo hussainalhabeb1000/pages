@@ -27,7 +27,7 @@ keys.push('AIzaSyB-saMGbj5Nok1h6fR7h4OikOxggB0U4pk')
 keys.push('AIzaSyCndZEo3hh5NuLoGsfkrDZ3KiHak_m40lw')
 
 key=keys[Math.floor(Math.random() *17)]
-num=window.location.hash.slice(1)
+num=parseInt(window.location.hash.slice(1))+1
 id5='https://sheets.googleapis.com/v4/spreadsheets/1OnCDJwqDpzc5-hUuLv1BL08XwWeT4G_cbU1xExVz0dw/values/Sheet1!'+num+':'+num+'?key='+key
 
 
