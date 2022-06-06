@@ -288,13 +288,13 @@ if (cl[replist*4-2]==false) {c3='#'+0} else {c3='#'+1}
 if (cl[replist*4-1]==false) {c4='#'+0} else {c4='#'+1}
 replist=replist+1
 
-list.push(q1+q2+q3+q4+q5+q6+c1+c2+c3+c4);
+list.push(q1+q2+q3+q4+q5+q6+c1+c2+c3+c4+);
 
 
 
 }
 
-document.querySelectorAll('[id="myInput"]')[0].value='https://hussainalhabeb1000.github.io/pages/quizloader.html'+list.join('')+'#link##'+'$0'
+document.querySelectorAll('[id="myInput"]')[0].value='https://hussainalhabeb1000.github.io/pages/quizloader.html'+list.join('')+'#link##'+document.querySelectorAll('question').length+'$0'
   /* Get the text field */
   ///var copyText = document.getElementById("myInput");
 
