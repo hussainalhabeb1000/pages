@@ -21,26 +21,25 @@ function upload() {var old
 
  if (document.querySelectorAll('[id="uPsrc"]')[0].src != 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=') {
   link=document.querySelectorAll('[id="uPsrc"]')[0].currentSrc
-///
-list200=[]
-s=0
-sold=0
+
+
 for (var count = 0; count < 200; count++) {
-s=s+1
-s2=s*50000
+  
 
-list200.push(link.slice(sold,s2))
+if (link == '') {
+  document.querySelectorAll('[id="uP0"]')[count].value='#'
 
-sold=s2
+} else {
+
+ document.querySelectorAll('[id="uP0"]')[count].value=link.slice(0,50000)
 
 }
-ss22=0
-for (var count = 0; count < 200; count++) {
-document.querySelectorAll('[id="uP0"]')[ss22].value=list200[ss22]
-	if(list200[ss22]==''){document.querySelectorAll('[id="uP0"]')[ss22].value='#'}
-ss22=ss22+1
+
+
+
+link=link.slice(50000)
+
 }
-///
 if (document.querySelectorAll('[id="uPsrc"]')[0].src!=old) {
   document.querySelectorAll('[id="uP00"]')[0].click();
 
