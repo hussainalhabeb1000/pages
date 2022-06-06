@@ -108,7 +108,7 @@ function next() {
 
 
 
-if (window.location.href.slice(iol+1)=='link#%20'
+if (window.location.hash.slice(1,5)=='link'
 ) {
   end()
 } else {
@@ -301,26 +301,12 @@ y=decodeURIComponent(y)
 window.location.href=window.location.href.slice(0,iol)
 +window.location.href.slice(i)}
 </script>
-<script>
 
-function deleete() {
-  var iframes = document.querySelectorAll('iframe');
-for (var i = 0; i < iframes.length; i++) {
-    iframes[i].parentNode.removeChild(iframes[i]);
-}window.location.replace("https://zr2l0794uiwuhp8mw5lwga.on.drv.tw/website/pageloader.html#data:text/html;charset=utf-8,"+parseInt(document.querySelectorAll('label')[0].innerHTML));
-}
-</script>
 <script>
 
 function end() {
-  var ifrm = document.createElement('iframe');
-ifrm.style.display="none"
-li1='https://zr2l0794uiwuhp8mw5lwga.on.drv.tw/website/submit.html'
-li2='#'+prompt("What is your name?");
-li3='#'+parseInt(document.querySelectorAll("p")[1].innerText)
-ifrm.setAttribute('id', 'ifrm');document.body.appendChild(ifrm);ifrm.setAttribute('src', li1+li2+li3);
-
-const myTimeout = setTimeout(deleete, 1000);
+  
+	location.replace('https://hussainalhabeb1000.github.io/pages/end.html#'+window.location.hash.slice(7)+'/'+document.querySelectorAll('[id=pp2]')[0].innerText)
 
 }
 </script><script>
