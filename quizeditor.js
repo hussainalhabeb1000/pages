@@ -288,7 +288,7 @@ if (cl[replist*4-2]==false) {c3='#'+0} else {c3='#'+1}
 if (cl[replist*4-1]==false) {c4='#'+0} else {c4='#'+1}
 replist=replist+1
 
-list.push(q1+q2+q3+q4+q5+q6+c1+c2+c3+c4+);
+list.push(q1+q2+q3+q4+q5+q6+c1+c2+c3+c4);
 
 
 
