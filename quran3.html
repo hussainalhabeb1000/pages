@@ -7,15 +7,9 @@
 
 <script>
 function serch2() {
-  result=[]
+ serch=document.querySelectorAll('input')[0].value
+result=[]
 result2=[]
-
-
-serch=document.querySelectorAll('input')[0].value
-restart()
-
-
-
 
 for (var count = 0; count < 6348; count++) {
 
@@ -45,21 +39,8 @@ result0.push(a0+a1+result[count]+a2+a1+result2[count])
 
 
 }
-document.querySelectorAll('thead')[0].innerHTML=document.querySelectorAll('thead')[0].innerHTML+result0.join('')
+document.querySelectorAll('thead')[0].innerHTML='\n<tr>\n<th bordercolor="#000000" dir="LTR" align="CENTER" bgcolor="#c0c0c0"><center style="FONT-SIZE:11pt" face="Calibri" color="#000000">الآية</center>\n<center style="FONT-SIZE:11pt" face="Calibri" color="#000000">0</center>\n</th>\n<th bgcolor="#c0c0c0" bordercolor="#000000" dir="LTR" align="CENTER"><center style="FONT-SIZE:11pt" face="Calibri" color="#000000">السورة</center>\n\n</th>\n\n</tr>\n'+result0.join('')
 document.querySelectorAll('center')[1].innerText=document.querySelectorAll('tr').length-4
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 </script>
 
