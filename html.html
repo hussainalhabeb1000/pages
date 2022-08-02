@@ -71,7 +71,7 @@ function load(htmll) {
 	e="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); };\nfunction deldel() {\ndocument.body.onload();};\x3C/script>"
 	f="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); };\nfunction deldel() {\ndocument.body.onload();document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();};\x3C/script>"
         g="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); };\nfunction deldel() {\ndocument.body.onload();};document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();\x3C/script>"
-	htmlold=htmll
+
 	htmll=htmll+g
 
   myWindow.document.write(htmll);
@@ -80,7 +80,7 @@ function load(htmll) {
    
 	
    for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}
-document.body.innerHTML=htmlold
+
 	
 	
 	
