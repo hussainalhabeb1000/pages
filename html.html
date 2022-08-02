@@ -67,7 +67,7 @@ function load(htmll) {
    
    for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}
 
-  if(count==document.querySelectorAll('script').length){document.body.onload()}
+  if(count==document.querySelectorAll('script').length){eval(`document.body.onload()`)}
 
 
 
