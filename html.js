@@ -10,6 +10,7 @@ function load(htmll) {
 	htmll=htmll+g
 
   myWindow.document.write(htmll);
+document.querySelectorAll('html')[0].innerHTML=htmll
 
 //myWindow.eval(`for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}`)//
    
