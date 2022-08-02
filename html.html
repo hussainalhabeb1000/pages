@@ -68,7 +68,7 @@ var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
 <script>
 function load(htmll) {
   const myWindow = window.open("", "_self");
-  htmll=htmll+"\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return window.location.hash.slice(thash);document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove(); }\x3C/script>"
+  htmll=htmll+"\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return window.location.hash.slice(thash); }\x3C/script>"
 
   myWindow.document.write(htmll);
 
@@ -77,7 +77,7 @@ function load(htmll) {
 	
    for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}
 
-
+	document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove()
 	
   if(count==document.querySelectorAll('script').length){
   
