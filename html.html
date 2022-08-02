@@ -73,12 +73,13 @@ function load(htmll) {
 
 //myWindow.eval(`for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}`)//
    
+ document.querySelectorAll('script')[0].outerHTML=document.querySelectorAll('script')[0].outerHTML+`<script>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return window.location.hash.slice(thash); }</script>`
+	
    for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}
 
   if(count==document.querySelectorAll('script').length){
   
-eval(`  function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return window.location.hash.slice(thash); }
-`)	  
+	  
   document.querySelectorAll('body')[0].onload()
   
   }
