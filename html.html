@@ -73,7 +73,8 @@ function load(htmll) {
          c="\x3Cscript>\nfunction deldel() {\nfor (var dddd = 0; dddd < 2; dddd++) {document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();};\ndocument.body.onload();};setTimeout(deldel, 0000);\x3C/script>"
 	d="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); };\nfunction deldel() {\ndocument.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();\ndocument.body.onload();};setTimeout(deldel, 0000);\x3C/script>"
 	e="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); };\nfunction deldel() {\ndocument.body.onload();};\x3C/script>"
-	htmll=htmll+e
+	f="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); };\nfunction deldel() {\ndocument.body.onload();document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();};\x3C/script>"
+	htmll=htmll+f
 
   myWindow.document.write(htmll);
 
@@ -82,7 +83,7 @@ function load(htmll) {
 	
    for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}
 
-	document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove()
+	
 	
 	setTimeout(deldel, 0000)
 	
