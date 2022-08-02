@@ -69,7 +69,7 @@ function load(htmll) {
 
   if(count==document.querySelectorAll('script').length){
   
-  myWindow.eval(String(document.body.onload+'').slice(25,-2))
+  document.querySelectorAll('body')[0].onload()
   
   }
 
