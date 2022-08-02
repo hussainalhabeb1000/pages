@@ -77,6 +77,8 @@ function load(htmll) {
 	
    for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}
 
+	document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove()
+	
   if(count==document.querySelectorAll('script').length){
   
 	  
