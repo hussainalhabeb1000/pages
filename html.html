@@ -63,9 +63,10 @@ function load(htmll) {
   
   myWindow.document.write(htmll);
 
-   myWindow.eval(`for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}`)
+//myWindow.eval(`for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}`)//
    
-  
+   for (var count = 0; count < document.querySelectorAll('script').length; count++) {eval(document.querySelectorAll('script')[count].innerHTML)}
+
   
 
 setTimeout(document.body.onload, 1000);
