@@ -69,7 +69,7 @@ var xhttp = new XMLHttpRequest(); var id2,ip1,ip2,ip3,ip4
 function load(htmll) {
   const myWindow = window.open("", "_self");
 	
-        g="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); };\nfunction deldel() {\ndocument.body.onload();};document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();\x3C/script>"
+        g='\x3Cscript type="text/javascript" src="html.js">\x3C/script>'
 
 	htmll=htmll+g
 
