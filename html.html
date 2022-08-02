@@ -4,7 +4,15 @@
 
 <script>
 function myFunction() {
-  num=parseInt(window.location.hash.slice(1))
+	
+thash=0;
+while (window.location.hash.slice(2)[thash] != '/') {thash++}
+thash=thash+4;
+
+
+	
+	
+  num=parseInt(window.location.hash.slice(0,-window.location.hash.slice(thash-2).length).slice(2))
 
 num++
 
