@@ -70,8 +70,8 @@ function load(htmll) {
   const myWindow = window.open("", "_self");
 	a="\x3Cscript>function windowlocationhash(hashh) { thash=0; while (window.location.hash.slice(2)[thash] != '/') {thash++} thash=thash+4; if (typeof hashh!='undefined'){window.location.hash=window.location.hash.slice(0,-(window.location.hash.slice(thash).length))+hashh}; return decodeURIComponent(window.location.hash.slice(thash)); }\x3C/script>"
 	 b="\x3Cscript>\nfunction deldel() {\nfor (var count = 0; count < 2; count++) {document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();}\n};setTimeout(deldel, 1000);\x3C/script>"
-         c='\x3Cscript>document.body.onload()\n\n\x3C/script>'
-	htmll=htmll+a+b
+         c="\x3Cscript>\nfunction deldel() {\nfor (var count = 0; count < 2; count++) {document.querySelectorAll('script')[document.querySelectorAll('script').length-1].remove();}\n};setTimeout(deldel, 1000);document.body.onload();\x3C/script>"
+	htmll=htmll+a+c
 
   myWindow.document.write(htmll);
 
